@@ -27,6 +27,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class SearchFragment extends Fragment{
     private RequestQueue mRequestQueue;
@@ -117,9 +118,12 @@ public class SearchFragment extends Fragment{
                                 authorsArrayList.add(authorsArray.optString(i));
                             }
                         }
+                        String listString = null;
+                        listString = authorsArrayList.stream().map(Object::toString)
+                            .collect(Collectors.joining(", "));
                         // after extracting all the data we are
                         // saving this data in our modal class.
-                        BookInfo bookInfo = new BookInfo(title, subtitle, authorsArrayList, publisher, publishedDate, description, pageCount, thumbnail, previewLink, infoLink, buyLink);
+                        BookInfo bookInfo = new BookInfo(title, subtitle, listString, publisher, publishedDate, description, pageCount, thumbnail, previewLink, infoLink, buyLink);
 
                         // below line is use to pass our modal
                         // class in our array list.

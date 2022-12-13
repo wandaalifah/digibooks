@@ -105,12 +105,12 @@ public class HomeBookInfo {
     }
 
     // creating a constructor class for our HomeBookInfo
-    public HomeBookInfo(String title, String subtitle, String authors, String publisher,
+    public HomeBookInfo(String title, String subtitle, String listString, String publisher,
                         String publishedDate, String description, int pageCount, String thumbnail,
                         String previewLink, String infoLink, String buyLink) {
         this.title = title;
         this.subtitle = subtitle;
-        this.authors = authors;
+        this.authors = listString;
         this.publisher = publisher;
         this.publishedDate = publishedDate;
         this.description = description;

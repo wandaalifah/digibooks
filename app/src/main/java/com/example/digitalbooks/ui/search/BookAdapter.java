@@ -43,7 +43,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
         BookInfo bookInfo = bookInfoArrayList.get(position);
         holder.nameTV.setText(bookInfo.getTitle());
         holder.publisherTV.setText(bookInfo.getPublisher());
-//        holder.authorsTV.setText(bookInfo.getAuthors());
+        holder.authorsTV.setText(bookInfo.getAuthors());
 
         // below line is use to set image from URL in our image view.
         String imgProtocol = bookInfo.getThumbnail().replace("http", "https");
@@ -60,7 +60,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
                 Intent i = new Intent(mContext, BookDetails.class);
                 i.putExtra("title", bookInfo.getTitle());
                 i.putExtra("subtitle", bookInfo.getSubtitle());
-//                i.putExtra("authors", bookInfo.getAuthors());
+                i.putExtra("authors", bookInfo.getAuthors());
                 i.putExtra("publisher", bookInfo.getPublisher());
                 i.putExtra("publishedDate", bookInfo.getPublishedDate());
                 i.putExtra("description", bookInfo.getDescription());
@@ -93,7 +93,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
         ViewHolder(View itemView) {
             super(itemView);
             nameTV = itemView.findViewById(R.id.idTVBookTitle);
-//            authorsTV = itemView.findViewById(R.id.idTVAuthor);
+            authorsTV = itemView.findViewById(R.id.idTVAuthor);
             publisherTV = itemView.findViewById(R.id.idTVpublisher);
             pageCountTV = itemView.findViewById(R.id.idTVNoOfPages);
             dateTV = itemView.findViewById(R.id.idTVPublishDate);

@@ -73,15 +73,13 @@ public class HomeFragment extends Fragment {
                 progressBar.setVisibility(View.GONE);
                 // inside on response method we are extracting all our json data.
                 try {
-                    String authors = null;
                     JSONArray itemsArray = response.getJSONArray("items");
                     for (int i = 0; i < itemsArray.length(); i++) {
                         JSONObject itemsObj = itemsArray.getJSONObject(i);
                         JSONObject volumeObj = itemsObj.getJSONObject("volumeInfo");
                         String title = volumeObj.optString("title");
                         String subtitle = volumeObj.optString("subtitle");
-                        authors = itemsObj.getString("authors");
-//                        JSONArray authorsArray = volumeObj.getJSONArray("authors");
+                        JSONArray authorsArray = volumeObj.getJSONArray("authors");
                         String publisher = volumeObj.optString("publisher");
                         String publishedDate = volumeObj.optString("publishedDate");
                         String description = volumeObj.optString("description");
@@ -93,15 +91,17 @@ public class HomeFragment extends Fragment {
                         JSONObject saleInfoObj = itemsObj.optJSONObject("saleInfo");
                         String buyLink = saleInfoObj.optString("buyLink");
                         ArrayList<String> authorsArrayList = new ArrayList<>();
+                        if (authorsArray.length() != 0) {
+                            for (int j = 0; j < authorsArray.length(); j++) {
+                                authorsArrayList.add(authorsArray.optString(i));
+                            }
+                        }
                         String listString = null;
-//                        if (authorsArray.length() != 0) {
-//                            listString = authorsArrayList.stream().map(Object::toString)
-//                                    .collect(Collectors.joining(", "));
-//                        }
-
+                        listString = authorsArrayList.stream().map(Object::toString)
+                                .collect(Collectors.joining(", "));
                         // after extracting all the data we are
                         // saving this data in our modal class.
-                        HomeBookInfo bookInfo = new HomeBookInfo(title, subtitle, authors, publisher, publishedDate, description, pageCount, thumbnail, previewLink, infoLink, buyLink);
+                        HomeBookInfo bookInfo = new HomeBookInfo(title, subtitle, listString, publisher, publishedDate, description, pageCount, thumbnail, previewLink, infoLink, buyLink);
 
                         // below line is use to pass our modal
                         // class in our array list.

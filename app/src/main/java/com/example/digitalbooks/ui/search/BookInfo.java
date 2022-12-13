@@ -1,13 +1,9 @@
 package com.example.digitalbooks.ui.search;
 
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-
 public class BookInfo {
     private String title;
     private String subtitle;
-    private ArrayList<String> authors;
+    private String authors;
     private String publisher;
     private String publishedDate;
     private String description;
@@ -34,11 +30,11 @@ public class BookInfo {
         this.subtitle = subtitle;
     }
 
-    public ArrayList<String> getAuthors() {
+    public String getAuthors() {
         return authors;
     }
 
-    public void setAuthors(ArrayList<String> authors) {
+    public void setAuthors(String authors) {
         this.authors = authors;
     }
 
@@ -107,12 +103,12 @@ public class BookInfo {
     }
 
     // creating a constructor class for our HomeBookInfo
-    public BookInfo(String title, String subtitle, ArrayList<String> authors, String publisher,
+    public BookInfo(String title, String subtitle, String listString, String publisher,
                     String publishedDate, String description, int pageCount, String thumbnail,
                     String previewLink, String infoLink, String buyLink) {
         this.title = title;
         this.subtitle = subtitle;
-        this.authors = authors;
+        this.authors = listString;
         this.publisher = publisher;
         this.publishedDate = publishedDate;
         this.description = description;

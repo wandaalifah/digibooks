@@ -35,7 +35,7 @@ public class BookDetails extends AppCompatActivity {
 
         // initializing our views..
         titleTV = findViewById(R.id.idTVTitle);
-//        authorsTV = findViewById(R.id.idTVAuthor);
+        authorsTV = findViewById(R.id.idTVAuthor);
         publisherTV = findViewById(R.id.idTVpublisher);
         descTV = findViewById(R.id.idTVDescription);
         pageTV = findViewById(R.id.idTVNoOfPages);
