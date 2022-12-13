@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "917262735392",
+    "project_id": "digitalbooks-18117",
+    "storage_bucket": "digitalbooks-18117.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917262735392:android:70e2cce99ae8af029a4445",
+        "android_client_info": {
+          "package_name": "com.example.digitalbooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917262735392-719elgnoomua1tuv3los8b2ti0ihob9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU1gfccg44mahcMIFRX1fiMVtIvd9MGBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917262735392-719elgnoomua1tuv3los8b2ti0ihob9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

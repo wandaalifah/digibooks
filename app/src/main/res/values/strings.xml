@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">DigiBook</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="book_image">
+        <item>@drawable/jangan_membuat_masalah</item>
+        <item>@drawable/love_letter</item>
+        <item>@drawable/the_confidante_plot</item>
+        <item>@drawable/fire_blood</item>
+        <item>@drawable/ikigai</item>
+        <item>@drawable/it_starts_with_us</item>
+    </string-array>
+
+    <string-array name="book_title">
+        <item>Jangan Membuat Masalah Kecil di Tempat Kerja Jadi Masalah Besar</item>
+        <item>Love Letters for Mr. T</item>
+        <item>The Confidante Plot</item>
+        <item>Fire &amp; Blood: 300 Years Before A Game of Thrones</item>
+        <item>Ikigai: The Japanese Secret to a Long and Happy Life</item>
+        <item>It Starts with Us: the highly anticipated sequel to IT ENDS WITH US</item>
+    </string-array>
+
+    <string-array name="book_writer">
+        <item>Richard Carlson</item>
+        <item>Sandila Ekaputri</item>
+        <item>Aranindy</item>
+        <item>George R. R. Martin</item>
+        <item>Héctor García · Francesc Miralles</item>
+        <item>Colleen Hoover</item>
+    </string-array>
+
+    <string-array name="book_detail">
+        <item>Banyak hal dalam hidup ini yang sebenarnya hanya masalah kecil, tapi kita memperlakukannya sebagai masalah besar. Sebenarnya, dengan membentuk perspektif baru bahwa masalah-masalah itu memang kecil, kita akan mempunyai lebih banyak waktu untuk memikirkan hal-hal yang benar-benar merupakan masalah besar. Dengan gaya tulisan yang mudah dipahami, buku ini menyajikan cara-cara membentuk perspektif yang lebih positif tersebut sehingga kita akan belajar untuk berdamai dengan diri sendiri dan lebih peduli. Hidup kita akan lebih terfokus pada masa kini, hubungan kita dengan orang lain akan menjadi lebih baik, dan batin kita akan menjadi lebih tenang.</item>
+        <item>What would you do if you discovered youve been living with the enemy Arguably, there are two ways to handle this situation. First, either panic and be at risk of defeat, or second, try to remain calm and play along with the enemy and hope to survive. Love Letters for Mr. T documents the journey of the latter. After countless typical headaches and weird symptoms, Sandila has her head examined and finds a rare brain tumor has gone into hiding on her brain stem. By now, you may recognize this object of affection called Mr. T. Yet, you wonder how their relationship will unfold or perhaps feel the urge to peek at their love letters Follow the roller coaster-like journey between Sandila and Mr. T and discover their tales of grief and hope. Who knows, there might be relatable stories out of this frenemy relationship that might cheer you up.</item>
+        <item>When the most trustworthy woman meets the most untrustworthy man, what will happen Paradoks Cermin—program unggulan terbaru dari Soma TV—merupakan reality show suspense-dating game show yang diisi oleh peran-peran penting seperti Confidante atau sang Penengah, karakter protagonis yang disebut Male Lead dan Female Lead, karakter antagonis yang disebut Villain dan Villainess, serta beberapa peran pendukung lain. Tujuan utama dari PC adalah mempersatukan Male Lead dan Female Lead di babak final, namun kehadiran Villain dan Villainess yang bertugas mengganggu kedua protagonis akan menambah kepelikan di dalam vila. Komentar-komentar netizen dan hiruk pikuk kru di balik layar pun tak ketinggalan meramaikan suasana. Selama 3 bulan, mereka semua akan menghabiskan waktu bersama di sebuah private villa dengan menyembunyikan karakter yang mereka perankan. Dengan persaingan, manipulasi, dan intrik-intrik untuk memenangkan Paradoks Cermin, adakah di antara mereka yang akhirnya berhasil mendapatkan happy ending di dalam permainan? Atau bahkan, di dunia nyata Whoaa, merinding gue lihat lo berdua barengan gini. Lebay. Serius, Guys Gue kayak lihat Joker lagi kongkow sama Ibu perinya Cinderella. What a terrific view</item>
+        <item>What really happened during the Dance of the Dragons Why was it so deadly to visit Valyria after the Doom What were Maegor the Cruels worst crimes What was it like in Westeros when dragons ruled the skies These are but a few of the questions answered in this essential chronicle, as related by a learned maester of the Citadel and featuring more than eighty black-and-white illustrations by artist Doug Wheatley. Readers have glimpsed small parts of this narrative in such volumes as The World of Ice &amp; Fire, but now, for the first time, the full tapestry of Targaryen history is revealed.</item>
+        <item>According to the Japanese, everyone has an ikigai—a reason for living. And according to the residents of the Japanese village with the worlds longest-living people, finding it is the key to a happier and longer life. Having a strong sense of ikigai—where what you love, what youre good at, what you can get paid for, and what the world needs all overlap—means that each day is infused with meaning. Its the reason we get up in the morning. Its also the reason many Japanese never really retire (in fact theres no word in Japanese that means retire in the sense it does in English): They remain active and work at what they enjoy, because theyve found a real purpose in life—the happiness of always being busy.</item>
+        <item>Before It Ends with Us, it started with Atlas. Colleen Hoover tells fan favourite Atlass side of the story and shares what comes next in this long-anticipated sequel to the 1 Sunday Times bestseller It Ends with Us
+
+Lily and her ex-husband, Ryle, have just settled into a civil co-parenting rhythm when she suddenly bumps into her first love, Atlas, again. After nearly two years separated, she is elated that for once, time is on their side, and she immediately says yes when Atlas asks her on a date.
+</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="no_search_term">Please enter a search term</string>
+    <string name="no_network">Please check your network connection and try again.</string>
+    <string name="no_results">"No Results Found"</string>
+    <string name="loading">Loading...</string>
+    <string name="info_no_email_found">Email not found</string>
+    <string name="info_no_username_found">Username not found</string>
+</resources>
